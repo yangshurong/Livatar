@@ -340,7 +340,7 @@
         <a href="https://scholar.google.com/citations?user=ocMf7fQAAAAJ&hl=zh-CN" style="background: transparent !important; color: white;">Hongwei Yi</a ><sup style="color: white;"> </sup>
       </span>
       <span class="author-block" style="background: transparent !important;">
-        <a href="" style="background: transparent !important; color: white;">Wei Li</a ><sup style="color: white;">‡</sup>
+        <a href="" style="background: transparent !important; color: white;">Wei Li</a ><sup style="color: white;">†</sup>
       </span>
     </div>
 
@@ -350,7 +350,7 @@
 
     <div class="is-size-5 publication-authors" style="background: transparent !important;">
       <span class="author-block" style="background: transparent !important; color: white;"><sup style="color: white;">*</sup>Equal contribution</span>
-      <span class="author-block" style="background: transparent !important; color: white;"><sup style="color: white;">‡</sup>Corresponding author</span>
+      <span class="author-block" style="background: transparent !important; color: white;"><sup style="color: white;">†</sup>Project lead</span>
     </div>
 
     <div class="column has-text-centered" style="background: transparent !important;">
@@ -425,15 +425,11 @@
         <div class="content has-text-justified">
           <p>
             We present Livatar, a real-time audio-driven talking heads videos generation framework. 
-            Our method builds upon two-stage, warp-based models that use an Autoencoder for identity-agnostic motion representation learning and a separated Transformer for audio-driven motion generation. 
-            Although these existing baselines are efficient, they suffer from limited lip-sync accuracy and long-term pose drift. 
-            We introduce two key designs to address these: (i) an exponential reweighting scheme for the flow-matching loss that enhances lip-sync accuracy by de-emphasizing early denoising steps, and (ii) a fused global and past-anchor attention mechanism within the Transformer block to correct head position and shape drift during extended generation. 
-            Coupled with system optimizations such as a conditioning cache, Livatar achieves state-of-the-art lip-sync quality with a 8.50 LipSync Confidence on the HDTF dataset; and reaches a throughput of 141 FPS with an end-to-end latency of 0.17s on a single A10 GPU. 
-            This makes high-fidelity avatars accessible to a broader applications. 
-            It is publicly available at 
-            <a href="https://www.hedra.com/">https://www.hedra.com/</a>. 
-            Our project page is available at 
-            <a href=""></a>.
+            Existing baselines suffer from limited lip-sync accuracy and longterm pose drift. 
+            We address these limitations with a tailored flow matching framework. 
+            Coupled with system optimizations, Livatar achieves state-of-the-art lipsync quality with a 8.50 LipSync Confidence on the HDTF dataset; and reaches a throughput of 141 FPS with an end-to-end latency of 0.17s on a single A10 GPU.
+            This makes high-fidelity avatars accessible to a broader applications. Our project page is available at 
+            <a href="https://www.hedra.com/">https://www.hedra.com/</a>.
           </p>
         </div>
     </div>
@@ -655,7 +651,7 @@
 
 <!-- Architecture -->
 
-<section class="section" >
+<!-- <section class="section" >
   <div class="container is-max-desktop" style="margin-top: 10rem;">
     <h2 class="title is-3">System Pipeline</h2>
     <div class="container" style="max-width: 100%;">
@@ -675,7 +671,7 @@
       </div>
     </div>
   </div>
-</section>
+</section> -->
 
 <section class="section" id="BibTeX">
   <div class="container is-max-desktop content">
